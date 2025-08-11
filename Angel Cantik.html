@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Malam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff7f9, #f8fbff);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #b94e82;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="content"></div>
+
+  <script>
+    const namaBenar = ["angelia putri pratiwi", "angel", "jelia", "angelia"];
+    const namaInput = prompt("Siapa nama kamu?");
+
+    const contentDiv = document.getElementById("content");
+
+    if (namaInput && namaBenar.includes(namaInput.trim().toLowerCase())) {
+      contentDiv.innerHTML = `
+        <h1>Selamat malam sayangkuu 💖 ❤️</h1>
+        <p>Kamu capek kan abis kerja? Hahahaha mmps</p>
+        <p>Rehatlah… biar tubuh dan hatimu kembali segar (biar ga ngambek mulu)</p>
+        <p>Tutup matamu, lepaskan semua lelah hari ini, besok akan jadi hari yang lebih indah</p>
+        <p>Selamat bobo sayangkuuu 💕</p>
+        <p>I love u selamanya ❤️ Mmmuachhh 😘</p>
+        <img src="Jelia.jpeg" alt="Foto Angelia">
+
+
+
+      `;
+    } else {
+      contentDiv.innerHTML = `<h1 style="color:red;">Anda bukan pacarnya Amirul 🚫</h1>`;
+    }
+  </script>
+
+</body>
+</html>
